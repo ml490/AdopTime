@@ -1,12 +1,28 @@
 import React from 'react';
 import AppBar from 'material-ui/AppBar';
+import Tabs , { Tab } from 'material-ui/Tabs';
 
-const Header = () => {
-    return (
-        <div>
-            <h1>Hellow Worlds</h1>
-        </div>
-    );
-};
+class Header extends React.Component {
+    constructor() {
+        super();
+
+        this.state = {
+            value: 0
+        };
+    }
+
+    render() {
+        return (
+            <div>
+                <AppBar position="static">
+                    <Tabs value={this.state.value}>
+                        <Tab label="Home" />
+                        <Tab label="Animals" />
+                    </Tabs>
+                </AppBar>
+            </div>
+        );
+    }
+}
 
 export default Header;
