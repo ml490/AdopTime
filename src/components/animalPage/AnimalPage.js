@@ -7,7 +7,7 @@ class AnimalPage extends React.Component {
         super(props);
 
         this.state = {
-            animals : [
+            animals: [
                 {
                     name: "asf",
                     color: "asf",
@@ -30,13 +30,13 @@ class AnimalPage extends React.Component {
         return (
             <div>
                 <h1>Animals View Title</h1>
-                <AnimalPageView animals={this.animals}/> 
+                <AnimalPageView animals={this.state.animals} />
             </div>
         );
     }
 }
 
-AnimalPage.propTypes = {    
+AnimalPage.propTypes = {
 
 };
 
@@ -47,9 +47,9 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps() {
-return {
+    return {
 
-};
-} 
+    };
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(AnimalPage);    
