@@ -1,14 +1,11 @@
 import React from 'react';
+import AnimalPageView from './animalsPageView/AnimalPageView';
 
 const HomePage = () => {
   return (
     <div>
-      <h1>React Slingshot</h1>
-
-      <h2>Get Started</h2>
-      <ol>
-        <li>Remove the demo and start coding: npm run remove-demo</li>
-      </ol>
+      <h1>Adopt time</h1>
+      <AnimalPageView />
     </div>
   );
 };

@@ -31,9 +31,9 @@
   "author": "Cory House",
   "license": "MIT",
   "dependencies": {
+    "auto-bind": "^1.2.1",
     "chrome": "^0.1.0",
     "eslint-plugin-auto-import": "^0.1.0",
-    "material-ui": "^1.0.0-beta.34",
     "object-assign": "4.1.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -42,10 +42,12 @@
     "react-router-redux": "^5.0.0-alpha.9",
     "redux": "3.6.0",
     "redux-thunk": "2.1.0",
+    "semantic-ui": "^2.3.2",
+    "semantic-ui-react": "^0.81.1",
     "set-default-browser": "^1.0.1"
   },
   "devDependencies": {
-    "@types/material-ui": "^0.21.0",
+    "@types/material-ui": "^0.21.1",
     "@types/redux": "^3.6.0",
     "autoprefixer": "7.1.4",
     "babel-cli": "6.24.1",

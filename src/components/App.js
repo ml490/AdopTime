@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Switch, Route } from 'react-router-dom';
 import HomePage from './HomePage';
-import AnimalPage from './animalPage/AnimalPage';
+import ManageAnimalPage from './manageAnimalsPage/ManageAnimalPage';
 import Header from '../common/Header';
 
 // This is a class-based component because the current
@@ -19,7 +19,8 @@ class App extends React.Component {
         </div>
         <Switch>
           <Route exact path="/" component={HomePage} />
-          <Route exact path="/Animals" component={AnimalPage} />
+          <Route exact path="/ManageAnimal" component={ManageAnimalPage} />
+          <Route exact path="/ManageAnimal/:id" component={ManageAnimalPage} />
         </Switch>
       </div>
     );

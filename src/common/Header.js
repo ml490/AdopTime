@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import AppBar from 'material-ui/AppBar';
-import Tabs, { Tab } from 'material-ui/Tabs';
+import {Button} from 'semantic-ui-react';
 
 class Header extends React.Component {
     constructor(context) {
@@ -20,15 +19,11 @@ class Header extends React.Component {
     }
 
     render() {
-        return (
-            <div>
-                <AppBar position="static">
-                    <Tabs value={this.state.value} centered>
-                        <Tab label="Home" onClick={() => this.handleTabClick(0, '/')} />
-                        <Tab label="Animals" onClick={() => this.handleTabClick(1, '/animals')} />
-                    </Tabs>
-                </AppBar>
-            </div>
+        return ( 
+             <div>
+                <Button onClick={() => this.handleTabClick(0, '/')}>Home</Button> 
+                <Button onClick={() => this.handleTabClick(2, '/ManageAnimal')}>Manage</Button>  
+             </div>
         );
     }
 }
